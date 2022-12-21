@@ -33,7 +33,7 @@ php ./src/php_zlib_benchmark.php --file ./samples/sample_2401kb.txt --cycles=100
 # Contributing
 Adding additional benchmarks on other CPU models and architectures is highly appreciated.
 
-# Output of the benchmark script
+# Benchmark script output
 ```
 php ./src/php_zlib_benchmark.php --file ./samples/sample_2401kb.txt --cycles=100
 Sample length 2401 kB
