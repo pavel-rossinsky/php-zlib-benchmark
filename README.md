@@ -7,7 +7,7 @@ zlib is often used in PHP projects for cache compression. Symfony's DeflateMarsh
 The following results are obtained with the [script](https://github.com/pavel-rossinsky/php-zlib-benchmark/blob/master/src/php_zlib_benchmark.php) benchmarking [gzdeflate](https://www.php.net/manual/en/function.gzdeflate.php) and [gzinflate](https://www.php.net/manual/en/function.gzinflate.php) functions of the [php-zlib](https://www.php.net/manual/en/ref.zlib.php) extension.
 The benchmark has been launched with PHP 7.4.33 on Amazon EC2 [c5.xlarge](https://aws.amazon.com/ec2/instance-types/c5/) instance. C5 instances are built on 3.0 GHz Intel Xeon Scalable (Skylake) processors, and have the potential to run at speeds up to 3.5 Ghz using Intel Turbo Boost Technology.
 
-| Compression level | Compression Speed, MB/s | Decompression Speed, MB/s | Ratio | Space Saving, % | Ratio / Time |
+| Compression level | Compression Speed, MB/s | Decompression Speed, MB/s | Compression Ratio | Space Saving, % | Ratio / Time |
 |:-----------------:|:-----------------------:|:-------------------------:|:-----:|:---------------:|:------------:|
 |         1         |         137.16          |           64.41           |  7.4  |      86.6       |   2246.223   |
 |         2         |         131.49          |           63.84           |  7.8  |      87.1       |   2246.826   |
