@@ -19,5 +19,5 @@ The benchmark has been launched with PHP 7.4.33 on Amazon EC2 [c5.xlarge](https:
 |         8         |          29.67          |           57.38           | 10.2  |      90.2       |   669.068    |
 |         9         |          27.99          |           56.54           | 10.2  |      90.2       |   631.573    |
 
-The results show that high compression levels do not make a big difference in Space Saving but are extremely expensive in terms of CPU time. For example, compression of a 2.4 MB large serialized object with level 9 takes 69.90 ms. With level 6 (default value): 37.23 ms. Whereas compression with level 2 will take 17.59 ms.
+The results show that high compression levels do not make a big difference in Space Saving but are extremely expensive in terms of CPU time. For example, compression of a 2.4 MB large serialized object with level 9 takes 69.90 ms with a compressed file size of 212 kB. Level 6 (default value) is 37.23 ms with a compressed file size of 217 kB. Compression with level 2 will take 17.59 ms with a compressed file size of 228 kB.
 Let's assume that the cache is stored in Redis and we want to take into account the time of transferring an additional amount of information over the network.
